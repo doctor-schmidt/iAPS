@@ -57,7 +57,7 @@ final class BaseFetchGlucoseManager: FetchGlucoseManager, Injectable {
         case .libreTransmitter:
             glucoseSource = libreTransmitter
         case .glucoseDirect:
-            glucoseSource = AppGroupSource(from: "GlucoseDirect", cgmType: .glucoseDirect)
+            glucoseSource = AppGroupSource(from: "Libre", cgmType: .glucoseDirect)
         case .enlite:
             glucoseSource = deviceDataManager
         }
